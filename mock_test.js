@@ -2,7 +2,7 @@ function solution(answers) {
     const answer = [];
     const students = new Array(3).fill(0);
     for(var i = 0; i <answers.length; i++){
-        //1번학생ㅁ
+        //1번학생
         if( i % 5 == answers[i] - 1) students[0]++;
 
         //2번학생
