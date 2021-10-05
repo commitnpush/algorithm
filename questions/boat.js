@@ -19,12 +19,12 @@
 //solution([70,50,50,80],100);
 
 function solution(peoples, limit) {
-  peoples.sort((a,b) => a - b);
+  peoples.sort((a, b) => a - b);
   let count = 0;
-  outer : while(peoples.length > 0){
+  outer: while (peoples.length > 0) {
     let people = peoples.shift();
-    for(let i = peoples.length - 1; i >=0; i--){
-      if(people + peoples[i] <= limit){
+    for (let i = peoples.length - 1; i >= 0; i--) {
+      if (people + peoples[i] <= limit) {
         count += peoples.length - i;
         peoples.splice(i);
         continue outer;
@@ -33,7 +33,6 @@ function solution(peoples, limit) {
     return count + peoples.length + 1;
   }
 
-  
   return count;
 }
-console.log(solution([70, 50, 80, 50,30,20],100));
+console.log(solution([70, 50, 80, 50, 30, 20], 100));
