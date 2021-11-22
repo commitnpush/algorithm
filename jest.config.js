@@ -2,5 +2,5 @@
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",
-  testMatch: ["**/questions/모음사전.ts"],
+  testMatch: ["**/questions/키패드누르기.ts"],
 };
